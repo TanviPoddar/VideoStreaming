@@ -19,6 +19,11 @@ const SearchBar = () => {
                 placeholder='Search...'
                 value=""
                 onChange={() => {}}
+                style={{
+                    border: 'none', // Remove default border
+                    outline: 'none', // Remove outline on focus
+                    flex: 1, // Take up remaining space
+                }}
             />
             <IconButton type="submit" sx={{ p: '10px', color: 'red'}}>
                 <Search />
